@@ -1,9 +1,12 @@
-# Odils Web Client
+# Kingpin Web Client
 
-Odils is a slido clone. This web client is written with ReactJS, Redux and Bootstrap.
+Kingpin is a Slido clone. This web client is written with ReactJS, Redux and Bootstrap.
 The backend is an ExpressJS app.
 
-## TL;DR
+## Kingpin Backend
+You can find the client code here: https://github.com/adilhussain/kingpin
+
+## Setting up a local development environment
 
 To get started developing right away:
 
