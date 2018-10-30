@@ -2,31 +2,93 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.AppHeader {
+  height: 3.5em;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.AppHeader a {
+  flex-grow: unset;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app-header-logo {
+  height: 2em;
+}
+
+.app-header-login {
+  position: absolute;
+  right: 1em;
+}
+
+@keyframes sidebar-show {
+    from {width: 0px; padding: 0;}
+    to {width: 250px; padding: 1rem;}
+}
+
+@keyframes sidebar-hide {
+    from {width: 250px; padding: 1rem;}
+    to {width: 0px; padding: 0;}
+}
+
+#sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0px;
+  height: 100%;
+  z-index: 1035;
+  padding: 0;
+}
+
+.sidebar-logo {
+  height: 2em;
+}
+
+#sidebar.show {
+  animation-name: sidebar-show;
+  animation-duration: 0.25s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+#sidebar.hide {
+  animation-name: sidebar-hide;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+}
+
+#sidebar.sidebar-toggler {
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.sidebar-navitems, .sidebar-header {
+  overflow: hidden;
+  padding-bottom: 0.5em;
+}
+
+#sidebar.sidebar-toggler a {
+  outline: 0 !important;
+  outline-offset: 0  !important;
+}
+
+.navbar-toggler {
+  border: 0;
+  padding: 0;
+  outline: 0 !important;
+  outline-offset: 0 !important;
+  position: absolute;
+  left: 1em;
+}
+
+
+.AppFooter {
+  width: 100%;
+  height: 3em;
+  position: absolute;
+  bottom: 0;
+  padding: 1em;
+  margin-top: 3em;
 }
