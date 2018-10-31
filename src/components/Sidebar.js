@@ -14,7 +14,7 @@ function Sidebar(props) {
         </button>
       </div>
       <div className="sidebar-navitems w-100 mw-100">
-        <button className="btn btn-outline-success my-2 my-sm-0 w-100 mw-100">Login</button>
+        <button className="sidebar-login btn btn-outline-success w-100">Login</button>
       </div>
     </div>
   );
